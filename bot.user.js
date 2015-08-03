@@ -221,7 +221,7 @@ console.log("Running Apos Bot!");
     }
 
     function getTimeToRemerge(mass){
-        return ((mass*0.02) +30);
+        return ((mass*2.2) +3000);
     }
 
     function getBlobCount(player){
