@@ -221,7 +221,7 @@ console.log("Running Apos Bot!");
     }
 
     function getTimeToRemerge(mass){
-        return ((mass*0.02) +30);
+        return ((mass*0.2) +300);
     }
 
     function getBlobCount(player){
@@ -802,7 +802,6 @@ console.log("Running Apos Bot!");
 
                         /*if ((enemyCanSplit && enemyDistance < splitDangerDistance) ||
                             (!enemyCanSplit && enemyDistance < normalDangerDistance)) {
-
                             allPossibleThreats[i].danger = true;
                             allPossibleThreats[i].dangerTimeOut = f.getLastUpdate();
                         }*/
@@ -1071,9 +1070,7 @@ console.log("Running Apos Bot!");
                         break;
                     }
                 }
-
                 destinationChoices.sort(function(a, b){return b[1] - a[1]});
-
                 if (dangerFound) {
                     for (var i = 0; i < destinationChoices.length; i++) {
                         if (destinationChoices[i][2]) {
